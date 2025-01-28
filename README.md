@@ -11,6 +11,7 @@
 
 ## Step 3:
 - check path for IDF and WAMR
+
   for IDF, I create add this code to ~/.bashrc:
   ```c
       alias get_idf='. $HOME/esp/esp-idf/export.sh'
@@ -20,7 +21,7 @@
     if [ -d "$HOME/wasm-micro-runtime" ] ; then
         PATH="$HOME/wasm-micro-runtime:$PATH"
     fi
-```
+  ```
 
 ## Step 4:
 - Open project in Visual Studio Code and configure:
