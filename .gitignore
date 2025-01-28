@@ -1,52 +1,42 @@
-# Prerequisites
-*.d
-
-# Object files
-*.o
-*.ko
+.cache
+.clangd
+.vs
+.vscode
+.venv
+/.idea
+**/cmake-build-*/
+**/*build*/
+!/build-scripts
 *.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
 *.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
 *.so
-*.so.*
-*.dylib
+.clangd
+.DS_Store
+*.o
+.aider*
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+core/deps/**
+core/shared/mem-alloc/tlsf
+core/iwasm/libraries/lib-wasi-threads/test/*.wasm
+core/iwasm/libraries/lib-socket/test/*.wasm
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+product-mini/app-samples/hello-world/test.wasm
+product-mini/platforms/linux-sgx/enclave-sample/App/
+product-mini/platforms/linux-sgx/enclave-sample/Enclave/
+product-mini/platforms/linux-sgx/enclave-sample/iwasm
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+build_out
+tests/wamr-test-suites/workspace
+
+!/test-tools/wamr-ide/VSCode-Extension/.vscode
+
+samples/socket-api/wasm-src/inc/pthread.h
+
+**/__pycache__
+
+tests/benchmarks/coremark/coremark*
+
+samples/workload/include/**
+!samples/workload/include/.gitkeep
+
+# core/iwasm/libraries/wasi-threads
