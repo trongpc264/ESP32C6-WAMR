@@ -1,15 +1,15 @@
-Quick note:
+# Quick note:
 - Test env: Ubuntu 24.04 LTS
 - IDE: Visual Studio Code (code, build, flash, debug)
 - HW: ESP32-C6-DevKitC-1
 
-Step 1:
+## Step 1:
 - Clone wasm-micro-runtime to ~/
 
-Step 2:
+## Step 2:
 - Clone this repo to local (e.g. to ~/WASM)
 
-Step 3:
+## Step 3:
 - check path for IDF and WAMR
   for IDF, I create add this code alias get_idf='. $HOME/esp/esp-idf/export.sh' to ~/.bashrc
   for WAMR, I add this code to ~/.profile:
@@ -17,7 +17,7 @@ Step 3:
         PATH="$HOME/wasm-micro-runtime:$PATH"
     fi
 
-Step 4:
+## Step 4:
 - Open project in Visual Studio Code and configure:
     + Flash method: UART
     + Port: /dev/ttyUSB0 (this port can be different on other PC)
